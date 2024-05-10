@@ -1,0 +1,39 @@
+.botones{
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 50%;
+}
+
+.SI{
+  cursor: pointer;
+  opacity: 1;
+  font-size: 18px;
+  color: rgb(7, 6, 6);
+  font-weight: bold;
+  background-color: rgba(3, 255, 87, 0.651);
+  padding: 10px 20px;
+  border-radius: 10px; 
+  margin-right: 30px;
+  width: 10%;
+  height: 60px;
+}
+
+.NO{
+  cursor: pointer;
+  opacity: 1;
+  font-size: 18px;
+  color: rgb(7, 6, 6);
+  font-weight: bold;
+  background-color: rgba(255, 15, 15, 0.651);
+  padding: 10px 20px;
+  border-radius: 10px; 
+  margin-left: 30px;
+  min-width:10%;
+  width: auto;
+  height: 60px;
+}
+
+.siuu{
+    height: 100vh;
+    width: 100vw;
+}

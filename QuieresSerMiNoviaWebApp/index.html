@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡IMPORTANTE!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="pagSI" href="si.html">
+</head>
+<body>
+
+    <center><h1 class="pregunta">¿QUIERES SER MI NOVIA?</h1>
+    <p>click imagen</p>
+    <div>
+        <img src="¿Quieres ser mi novia_.jpeg" class="img" onclick="sonar()">
+    </div>
+    
+   
+    <div class="botones">
+        <button class="SI" onclick="irAPagina('si.html')">SI</button>
+        <button class="NO" id="miBoton" onclick="cambiarContenido()" disabled: sonar()> NO</button>
+    </div>
+</center>
+
+<script>
+     var audioSonar;
+
+function cambiarContenido() {
+  var boton = document.getElementById("miBoton");
+  if (boton.innerHTML === "¿Segura que no?") {
+    boton.innerHTML = "¿Deberitas?";
+  } else {
+    boton.innerHTML = "¿Segura que no?";
+  }
+
+  if (audioSonar) { 
+    audioSonar.pause();
+    audioSonar.currentTime = 0;
+  }
+
+  audioSonar = new Audio('violin_tite.mp3');
+  audioSonar.play();
+}
+
+function irAPagina(path) {
+  window.location.href = path;
+}
+
+function sonar() {
+  audioSonar = new Audio('tututu.mp3');
+  audioSonar.play();
+}
+</script>
+
+</body>
+</html>
